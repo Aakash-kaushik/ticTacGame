@@ -32,11 +32,11 @@ def winnerDecide(a):
         return 0
     elif a[6]==a[7] and a[7]==a[8] and a[7]=='O':
         return 0
-    elif a[1]==a[4] and a[4]==a[7] and a[7]=='0':
+    elif a[1]==a[4] and a[4]==a[7] and a[7]=='O':
         return 0
-    elif a[2]==a[5] and a[5]==a[8] and a[2]=='0':
+    elif a[2]==a[5] and a[5]==a[8] and a[2]=='O':
         return 0
-    elif a[3]==a[6] and a[6]==a[9] and a[3]=='0':
+    elif a[3]==a[6] and a[6]==a[9] and a[3]=='O':
         return 0
     elif a[1]==a[5] and a[5]==a[9] and a[1]=='O':
         return 0
