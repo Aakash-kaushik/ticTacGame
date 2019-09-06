@@ -48,19 +48,19 @@ printBoard(ticTacBoard)
 
 for chance in range(1,10):
     if player==0:
-        boardPos=int(input('player one, enter where you want to do your move'))
+        boardPos=int(input('player one, enter where you want to do your move: '))
         ticTacBoard[boardPos]='X'
         player=1
     elif player==1:
-        boardPos=int(input('player two, enter where you want to do your move'))
+        boardPos=int(input('player two, enter where you want to do your move: '))
         ticTacBoard[boardPos]='O'
         player=0
     printBoard(ticTacBoard)
     if winnerDecide(ticTacBoard)==0:
-        print('player two is the winner')
+        print('player two is the winner'.center(50,'*'))
         break
     if winnerDecide(ticTacBoard)==1:
-        print('player one is the winner')
+        print('player one is the winner'.center(50,'*'))
         break
 
 if not winnerDecide(ticTacBoard)==1 or winnerDecide(ticTacBoard)==0:
